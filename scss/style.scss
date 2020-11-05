@@ -5,7 +5,8 @@ $naranja: #E15829;
 $celeste: #61B4E4;
 $amarillo: #FFB819;
 
-.hola {font-weight: bold;}
+.hola {font-weight: bold;
+		font-size: 3rem;}
 
 @import "header";
 
@@ -203,10 +204,9 @@ section { background-image: url(imagenes/fondo2.png);
 		grid-template-columns: 1.5fr 1fr 1fr;
 		grid-template-rows: auto;
 		grid-template-areas: "imagen caja caja";
+	
 	}
 	.descarga__ImagenRegDin {
-		width: 300px;
-		height: 300px;
 		display: inline-block; 
 		grid-area: imagen ;
 	}
@@ -217,41 +217,8 @@ section { background-image: url(imagenes/fondo2.png);
 		text-align: center;
 		width: 700px;
 		grid-area: caja ;
-		.descarga__RegDin { 
-			font-size: 2rem; 
-			font-weight: bold; 
-			color: $gris; 
-			.descarga__LinkReg { 
-				font-size: 1.5rem; 
-				background-color: $naranja; 
-				color: white;
-				padding: 10px; 
-				border-radius: 10px;
-				transition: 0.5s; 
-			}
-			.descarga__LinkReg:hover { 
-				color: $naranja;
-				background-color: white;
-				border: solid 3px $naranja; 
-			}
-			.descarga__LinkDin { 
-				font-size: 1.5rem; 
-				background-color: $amarillo; 
-				color: white;
-				padding: 10px; 
-				border-radius: 10px;
-				transition: 0.5s; 
-			}
-			.descarga__LinkDin:hover { 
-				color: $amarillo;
-				background-color: white;
-				border: solid 3px $amarillo; 
-			}
-		}
 	}
-	.descarga__ImagenTopicos {	
-		width: 300px;
-		height: 300px;
+	.descarga__ImagenTopicos {
 		display: inline-block;
 		grid-area: imagen ;
 	}
@@ -270,18 +237,6 @@ section { background-image: url(imagenes/fondo2.png);
 			font-size: 2rem;
 			font-weight: bold; 
 			color: $gris; 
-			.descarga__LinkTopicos { 
-				font-size: 1.5rem; 
-				background-color: $verde; 
-				color: white;
-				padding: 10px 50px; 
-				border-radius: 10px;
-				transition: 0.5s; }
-			.descarga__LinkTopicos:hover { 
-				color: $verde;
-				background-color: white;
-				border: solid 3px $verde;
-			}
 		}
 	}
 
@@ -436,3 +391,42 @@ section { background-image: url(imagenes/fondo2.png);
 
 
 @import "footer";
+
+@media screen and (max-width: 768px) {
+
+/* HEADER */
+
+	.LogoWeb { width: 50%;
+				height: 50%; }
+
+	.TituloInicio { 
+		font-size: 1.8rem; }
+	.TextoInicio { 
+		font-size: 0.8rem; }
+
+	.Index { 
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(3, 1fr);
+		grid-template-areas: 
+		"participantes" "escuelas" "voluntarios";
+		.Index__flex { 
+			flex-direction: row;
+			.Index__imagen {
+				width: 240px;
+				height: 160px;
+			}
+			.Index__caja { 
+				width: 240px;
+				height: 160px;
+				font-size: 0.8rem;
+				.Index__titulo { 
+					font-size: 1rem; 
+				}
+				.Index__SubTitulo { 
+					font-size: 0.8rem;
+				}
+			}
+		}
+	}
+
+}

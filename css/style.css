@@ -1,5 +1,6 @@
 .hola {
-  font-weight: bold; }
+  font-weight: bold;
+  font-size: 3rem; }
 
 header {
   text-align: center; }
@@ -31,6 +32,11 @@ header {
       text-decoration-line: none; }
     .navegador__conteiner .navegador__barra a {
       text-decoration-line: none; }
+
+@media screen and (max-width: 768px) {
+  .navegador__conteiner .navegador__barra {
+    font-size: 0.8rem;
+    width: 100%; } }
 
 section {
   background-image: url(imagenes/fondo2.png);
@@ -202,8 +208,6 @@ section {
     grid-template-rows: auto;
     grid-template-areas: "imagen caja caja"; }
   .descarga__conteiner .descarga__ImagenRegDin {
-    width: 300px;
-    height: 300px;
     display: inline-block;
     grid-area: imagen; }
   .descarga__conteiner .descarga__CajaRegDin {
@@ -213,35 +217,7 @@ section {
     text-align: center;
     width: 700px;
     grid-area: caja; }
-    .descarga__conteiner .descarga__CajaRegDin .descarga__RegDin {
-      font-size: 2rem;
-      font-weight: bold;
-      color: #646467; }
-      .descarga__conteiner .descarga__CajaRegDin .descarga__RegDin .descarga__LinkReg {
-        font-size: 1.5rem;
-        background-color: #E15829;
-        color: white;
-        padding: 10px;
-        border-radius: 10px;
-        transition: 0.5s; }
-      .descarga__conteiner .descarga__CajaRegDin .descarga__RegDin .descarga__LinkReg:hover {
-        color: #E15829;
-        background-color: white;
-        border: solid 3px #E15829; }
-      .descarga__conteiner .descarga__CajaRegDin .descarga__RegDin .descarga__LinkDin {
-        font-size: 1.5rem;
-        background-color: #FFB819;
-        color: white;
-        padding: 10px;
-        border-radius: 10px;
-        transition: 0.5s; }
-      .descarga__conteiner .descarga__CajaRegDin .descarga__RegDin .descarga__LinkDin:hover {
-        color: #FFB819;
-        background-color: white;
-        border: solid 3px #FFB819; }
   .descarga__conteiner .descarga__ImagenTopicos {
-    width: 300px;
-    height: 300px;
     display: inline-block;
     grid-area: imagen; }
   .descarga__conteiner .descarga__CajaTopicos {
@@ -258,17 +234,6 @@ section {
       font-size: 2rem;
       font-weight: bold;
       color: #646467; }
-      .descarga__conteiner .descarga__CajaTopicos .descarga__Topicos .descarga__LinkTopicos {
-        font-size: 1.5rem;
-        background-color: #73A950;
-        color: white;
-        padding: 10px 50px;
-        border-radius: 10px;
-        transition: 0.5s; }
-      .descarga__conteiner .descarga__CajaTopicos .descarga__Topicos .descarga__LinkTopicos:hover {
-        color: #73A950;
-        background-color: white;
-        border: solid 3px #73A950; }
 
 .btn-reg {
   font-size: 1.5rem;
@@ -454,3 +419,67 @@ footer {
         background-color: white; }
       .footer__conteiner .footer__caja .footer__informacion .footer__logos {
         margin-right: 10px; }
+
+@media screen and (max-width: 768px) {
+  .footer__conteiner .footer__caja {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 3fr;
+    grid-template-areas: "redes contacto" "InfoRedes InfoContacto";
+    justify-items: center;
+    width: 90%; }
+    .footer__conteiner .footer__caja #Redes {
+      grid-area: redes; }
+    .footer__conteiner .footer__caja #Contacto {
+      grid-area: contacto; }
+    .footer__conteiner .footer__caja #InfoRedes {
+      grid-area: InfoRedes; }
+    .footer__conteiner .footer__caja #InfoContacto {
+      grid-area: InfoContacto;
+      text-align: center; }
+    .footer__conteiner .footer__caja .footer__titulos {
+      font-weight: bold;
+      font-size: 1rem; }
+    .footer__conteiner .footer__caja .footer__informacion {
+      font-size: 0.8rem;
+      line-height: 3.0; }
+      .footer__conteiner .footer__caja .footer__informacion .footer__links {
+        color: white;
+        text-decoration-line: none;
+        padding: 4px;
+        border-radius: 2px;
+        transition: 0.5s; }
+      .footer__conteiner .footer__caja .footer__informacion .footer__links:hover {
+        text-decoration-line: none;
+        font-weight: bold;
+        color: black;
+        background-color: white; }
+      .footer__conteiner .footer__caja .footer__informacion .footer__logos {
+        margin-right: 10px; } }
+
+@media screen and (max-width: 768px) {
+  /* HEADER */
+  .LogoWeb {
+    width: 50%;
+    height: 50%; }
+  .TituloInicio {
+    font-size: 1.8rem; }
+  .TextoInicio {
+    font-size: 0.8rem; }
+  .Index {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "participantes" "escuelas" "voluntarios"; }
+    .Index .Index__flex {
+      flex-direction: row; }
+      .Index .Index__flex .Index__imagen {
+        width: 240px;
+        height: 160px; }
+      .Index .Index__flex .Index__caja {
+        width: 240px;
+        height: 160px;
+        font-size: 0.8rem; }
+        .Index .Index__flex .Index__caja .Index__titulo {
+          font-size: 1rem; }
+        .Index .Index__flex .Index__caja .Index__SubTitulo {
+          font-size: 0.8rem; } }
