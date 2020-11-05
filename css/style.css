@@ -422,40 +422,15 @@ footer {
 
 @media screen and (max-width: 768px) {
   .footer__conteiner .footer__caja {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr 3fr;
-    grid-template-areas: "redes contacto" "InfoRedes InfoContacto";
-    justify-items: center;
-    width: 90%; }
-    .footer__conteiner .footer__caja #Redes {
-      grid-area: redes; }
-    .footer__conteiner .footer__caja #Contacto {
-      grid-area: contacto; }
-    .footer__conteiner .footer__caja #InfoRedes {
-      grid-area: InfoRedes; }
-    .footer__conteiner .footer__caja #InfoContacto {
-      grid-area: InfoContacto;
-      text-align: center; }
+    width: 95%; }
     .footer__conteiner .footer__caja .footer__titulos {
-      font-weight: bold;
-      font-size: 1rem; }
+      font-size: 1.2rem; }
     .footer__conteiner .footer__caja .footer__informacion {
       font-size: 0.8rem;
-      line-height: 3.0; }
-      .footer__conteiner .footer__caja .footer__informacion .footer__links {
-        color: white;
-        text-decoration-line: none;
-        padding: 4px;
-        border-radius: 2px;
-        transition: 0.5s; }
-      .footer__conteiner .footer__caja .footer__informacion .footer__links:hover {
-        text-decoration-line: none;
-        font-weight: bold;
-        color: black;
-        background-color: white; }
+      line-height: 2.5;
+      text-align: center; }
       .footer__conteiner .footer__caja .footer__informacion .footer__logos {
-        margin-right: 10px; } }
+        display: none; } }
 
 @media screen and (max-width: 768px) {
   /* HEADER */
@@ -473,11 +448,11 @@ footer {
     .Index .Index__flex {
       flex-direction: row; }
       .Index .Index__flex .Index__imagen {
-        width: 240px;
-        height: 160px; }
+        width: 180px;
+        height: 120px; }
       .Index .Index__flex .Index__caja {
-        width: 240px;
-        height: 160px;
+        width: 180px;
+        height: 120px;
         font-size: 0.8rem; }
         .Index .Index__flex .Index__caja .Index__titulo {
           font-size: 1rem; }
