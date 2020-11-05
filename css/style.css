@@ -68,9 +68,14 @@ section {
   font-weight: bold; }
 
 .TextoInicio {
+  display: flex;
+  justify-content: center;
   color: #646467;
   font-size: 1.5rem;
-  text-align: center; }
+  text-align: center;
+  width: 100%; }
+  .TextoInicio p {
+    width: 80%; }
 
 .Index {
   display: grid;
@@ -90,6 +95,9 @@ section {
     .Index .Index__flex .Index__flex--voluntarios {
       grid-area: voluntarios; }
     .Index .Index__flex .Index__caja {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       background-color: beige;
       width: 300px;
       text-align: center;
@@ -101,13 +109,18 @@ section {
         font-size: 1.2rem;
         font-weight: bold;
         letter-spacing: 3px;
-        color: #646467; }
+        color: #646467;
+        padding-bottom: 15px;
+        padding-top: 15px; }
       .Index .Index__flex .Index__caja .Index__SubTitulo {
         font-size: 1rem;
         font-weight: bold;
         display: inline;
         line-height: 1.8;
-        color: #646467; }
+        color: #646467;
+        padding-bottom: 15px; }
+      .Index .Index__flex .Index__caja .Index__texto {
+        width: 90%; }
 
 /*SOBRE NOSOTROS*/
 .FranjaSN {
@@ -438,10 +451,12 @@ footer {
     width: 50%;
     height: 50%; }
   .TituloInicio {
-    font-size: 1.8rem; }
+    font-size: 2rem; }
   .TextoInicio {
     font-size: 0.8rem; }
   .Index {
+    border: solid;
+    height: 400px;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
     grid-template-areas: "participantes" "escuelas" "voluntarios"; }
@@ -453,8 +468,10 @@ footer {
       .Index .Index__flex .Index__caja {
         width: 180px;
         height: 120px;
-        font-size: 0.8rem; }
+        font-size: 0.6rem; }
         .Index .Index__flex .Index__caja .Index__titulo {
-          font-size: 1rem; }
+          font-size: 1rem;
+          padding-bottom: 0px; }
         .Index .Index__flex .Index__caja .Index__SubTitulo {
-          font-size: 0.8rem; } }
+          font-size: 0.8rem;
+          padding-bottom: 0px; } }
