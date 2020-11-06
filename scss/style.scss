@@ -213,9 +213,14 @@ section { background-image: url(imagenes/fondo2.png);
 /*RECURSOS*/
 
 .TituloRecursos {
+	display: flex;
+	justify-content: center;
 	font-size: 2rem;
 	text-align: center;
 	color: $gris;
+	p {
+		width: 80%;
+	}
 }
 
 .descarga__conteiner { 
@@ -424,10 +429,30 @@ section { background-image: url(imagenes/fondo2.png);
 	.LogoWeb { width: 50%;
 				height: 50%; }
 
+
+/*FRANJAS*/
+
+.franja__conteiner { 
+	
+	.franja__imagen { 
+		width: 100%; 
+		height: 100%;
+	}
+	.franja__caja {
+		bottom: 105px; 
+		.franja__titulo {
+			font-size: 2rem;
+		}
+	}
+}
+
+
+/* INDEX */
+
 	.TituloInicio { 
 		font-size: 2rem;
 		h1 {
-			width: 90%;
+			width: 80%;
 		}
 	}
 	.TextoInicio { 
@@ -468,5 +493,116 @@ section { background-image: url(imagenes/fondo2.png);
 			}
 		}
 	}
+
+
+
+/* RECURSOS */
+
+	.TituloRecursos {
+		font-size: 0.8rem;
+		p {
+			width: 95%;
+		}
+	}
+
+	.descarga__conteiner { 
+		display: grid;
+		grid-template-columns: 1.5fr 2fr;
+		grid-template-rows: auto;
+		grid-template-areas: "imagen caja";
+		justify-items: center;
+		align-items: center;
+		.descarga__conteiner--regdin {
+			grid-template-columns: 1.5fr 1fr 1fr;
+			grid-template-rows: auto;
+			grid-template-areas: "imagen caja caja";
+		
+		}
+		.descarga__ImagenRegDin {
+			display: inline-block; 
+			grid-area: imagen ;
+			width: 150px;
+			height: 150px;
+		}
+		.descarga__CajaRegDin { 
+			display: inline-flex; 
+			flex-direction: row;
+			justify-content: space-around; 
+			text-align: center;
+			width: 300px;
+			grid-area: caja ;
+		}
+		.descarga__ImagenTopicos {
+			display: inline-block;
+			grid-area: imagen ;
+			width: 150px;
+			height: 150px;
+		}
+		.descarga__CajaTopicos {
+			display: inline-flex;
+			flex-direction: column;
+			justify-content: space-around; 
+			align-items: center;
+			text-align: center;
+			width: 300px;
+			grid-area: caja ;
+			.descarga__CajaTopicos--width {
+				width: 100px;
+			}
+			.descarga__Topicos { 
+				font-size: 1rem;
+			}
+		}
+
+	}
+
+	.btn-reg {
+		font-size: 1rem;
+		font-weight: bold;
+		background-color: $naranja; 
+		color: white;
+		padding: 5px 10px; 
+		border-radius: 10px;
+		border: none;
+		transition: 0.5s;
+	}
+	.btn-reg:hover {
+		background-color: white;
+		color: $naranja;
+		border: solid $naranja 3px;
+	}
+
+	.btn-din {
+		font-size: 1rem;
+		font-weight: bold;
+		background-color: $amarillo; 
+		color: white;
+		padding: 5px 10px; 
+		border-radius: 10px;
+		border: none;
+		transition: 0.5s;
+	}
+	.btn-din:hover {
+		background-color: white;
+		color: $amarillo;
+		border: solid $amarillo 3px;
+	}
+
+	.btn-topico { 
+		font-size: 1rem;
+		font-weight: bold;
+		background-color: $verde; 
+		color: white;
+		padding: 5px 10px; 
+		border-radius: 10px;
+		border: none;
+		transition: 0.5s; }
+	.btn-topico:hover { 
+		background-color: white;
+		color: $verde;
+		border: solid $verde 3px; }
+
+
+
 
 }

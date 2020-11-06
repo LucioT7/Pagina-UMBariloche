@@ -209,9 +209,13 @@ section {
 
 /*RECURSOS*/
 .TituloRecursos {
+  display: flex;
+  justify-content: center;
   font-size: 2rem;
   text-align: center;
   color: #646467; }
+  .TituloRecursos p {
+    width: 80%; }
 
 .descarga__conteiner {
   display: grid;
@@ -454,10 +458,19 @@ footer {
   .LogoWeb {
     width: 50%;
     height: 50%; }
+  /*FRANJAS*/
+  .franja__conteiner .franja__imagen {
+    width: 100%;
+    height: 100%; }
+  .franja__conteiner .franja__caja {
+    bottom: 105px; }
+    .franja__conteiner .franja__caja .franja__titulo {
+      font-size: 2rem; }
+  /* INDEX */
   .TituloInicio {
     font-size: 2rem; }
     .TituloInicio h1 {
-      width: 90%; }
+      width: 80%; }
   .TextoInicio {
     font-size: 1.2rem; }
     .TextoInicio p {
@@ -484,4 +497,88 @@ footer {
           font-size: 0.8rem;
           padding-bottom: 0px; }
         .Index .Index__flex .Index__caja .Index__texto {
-          width: 80%; } }
+          width: 80%; }
+  /* RECURSOS */
+  .TituloRecursos {
+    font-size: 0.8rem; }
+    .TituloRecursos p {
+      width: 95%; }
+  .descarga__conteiner {
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+    grid-template-rows: auto;
+    grid-template-areas: "imagen caja";
+    justify-items: center;
+    align-items: center; }
+    .descarga__conteiner .descarga__conteiner--regdin {
+      grid-template-columns: 1.5fr 1fr 1fr;
+      grid-template-rows: auto;
+      grid-template-areas: "imagen caja caja"; }
+    .descarga__conteiner .descarga__ImagenRegDin {
+      display: inline-block;
+      grid-area: imagen;
+      width: 150px;
+      height: 150px; }
+    .descarga__conteiner .descarga__CajaRegDin {
+      display: inline-flex;
+      flex-direction: row;
+      justify-content: space-around;
+      text-align: center;
+      width: 300px;
+      grid-area: caja; }
+    .descarga__conteiner .descarga__ImagenTopicos {
+      display: inline-block;
+      grid-area: imagen;
+      width: 150px;
+      height: 150px; }
+    .descarga__conteiner .descarga__CajaTopicos {
+      display: inline-flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      text-align: center;
+      width: 300px;
+      grid-area: caja; }
+      .descarga__conteiner .descarga__CajaTopicos .descarga__CajaTopicos--width {
+        width: 100px; }
+      .descarga__conteiner .descarga__CajaTopicos .descarga__Topicos {
+        font-size: 1rem; }
+  .btn-reg {
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #E15829;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: none;
+    transition: 0.5s; }
+  .btn-reg:hover {
+    background-color: white;
+    color: #E15829;
+    border: solid #E15829 3px; }
+  .btn-din {
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #FFB819;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: none;
+    transition: 0.5s; }
+  .btn-din:hover {
+    background-color: white;
+    color: #FFB819;
+    border: solid #FFB819 3px; }
+  .btn-topico {
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #73A950;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: none;
+    transition: 0.5s; }
+  .btn-topico:hover {
+    background-color: white;
+    color: #73A950;
+    border: solid #73A950 3px; } }
