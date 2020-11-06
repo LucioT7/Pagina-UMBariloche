@@ -512,19 +512,19 @@ section { background-image: url(imagenes/fondo2.png);
 		grid-template-areas: "imagen caja caja";
 		}
 		.descarga__ImagenRegDin {
-			width: 150px;
-			height: 150px;
+			width: 120px;
+			height: 120px;
 		}
-		.descarga__CajaRegDin { border: solid;
-			width: 300px;
+		.descarga__CajaRegDin {
+			width: 200px;
 		}
 		.descarga__ImagenTopicos {
-			width: 150px;
-			height: 150px;
+			width: 120px;
+			height: 120px;
 		}
 		.descarga__CajaTopicos {
 			width: 300px;
-			.descarga__CajaTopicos--width { border: solid black;
+			.descarga__CajaTopicos--width {
 				width: 100px;
 			}
 			.descarga__Topicos { 

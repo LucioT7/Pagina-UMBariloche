@@ -508,18 +508,16 @@ footer {
     grid-template-rows: auto;
     grid-template-areas: "imagen caja caja"; }
   .descarga__conteiner .descarga__ImagenRegDin {
-    width: 150px;
-    height: 150px; }
+    width: 120px;
+    height: 120px; }
   .descarga__conteiner .descarga__CajaRegDin {
-    border: solid;
-    width: 300px; }
+    width: 200px; }
   .descarga__conteiner .descarga__ImagenTopicos {
-    width: 150px;
-    height: 150px; }
+    width: 120px;
+    height: 120px; }
   .descarga__conteiner .descarga__CajaTopicos {
     width: 300px; }
     .descarga__conteiner .descarga__CajaTopicos .descarga__CajaTopicos--width {
-      border: solid black;
       width: 100px; }
     .descarga__conteiner .descarga__CajaTopicos .descarga__Topicos {
       font-size: 1rem; }
