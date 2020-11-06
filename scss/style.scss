@@ -41,10 +41,16 @@ section { background-image: url(imagenes/fondo2.png);
 /*INDEX*/
 
 .TituloInicio { 
+	display: flex;
+	justify-content: center;
 	color: $bordo; 
 	font-size: 2.5rem; 
 	text-align: center; 
-	font-weight: bold; }
+	font-weight: bold;
+	h1 {
+		width: 80%;
+	}
+}
 .TextoInicio { 
 	display: flex;
 	justify-content: center;
@@ -419,11 +425,19 @@ section { background-image: url(imagenes/fondo2.png);
 				height: 50%; }
 
 	.TituloInicio { 
-		font-size: 2rem; }
+		font-size: 2rem;
+		h1 {
+			width: 90%;
+		}
+	}
 	.TextoInicio { 
-		font-size: 0.8rem; }
+		font-size: 1.2rem;
+		p {
+			width: 95%;
+		}
+	}
 
-	.Index { border: solid;
+	.Index { 
 		height: 400px;
 		grid-template-columns: 1fr;
 		grid-template-rows: repeat(3, 1fr);
@@ -439,6 +453,7 @@ section { background-image: url(imagenes/fondo2.png);
 				width: 180px;
 				height: 120px;
 				font-size: 0.6rem;
+				justify-content: space-between;
 				.Index__titulo { 
 					font-size: 1rem;
 					padding-bottom: 0px;
@@ -446,6 +461,9 @@ section { background-image: url(imagenes/fondo2.png);
 				.Index__SubTitulo { 
 					font-size: 0.8rem;
 					padding-bottom: 0px;
+				}
+				.Index__texto {
+					width: 80%;
 				}
 			}
 		}

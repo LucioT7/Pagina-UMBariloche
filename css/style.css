@@ -62,10 +62,14 @@ section {
 
 /*INDEX*/
 .TituloInicio {
+  display: flex;
+  justify-content: center;
   color: #A02140;
   font-size: 2.5rem;
   text-align: center;
   font-weight: bold; }
+  .TituloInicio h1 {
+    width: 80%; }
 
 .TextoInicio {
   display: flex;
@@ -452,10 +456,13 @@ footer {
     height: 50%; }
   .TituloInicio {
     font-size: 2rem; }
+    .TituloInicio h1 {
+      width: 90%; }
   .TextoInicio {
-    font-size: 0.8rem; }
+    font-size: 1.2rem; }
+    .TextoInicio p {
+      width: 95%; }
   .Index {
-    border: solid;
     height: 400px;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
@@ -468,10 +475,13 @@ footer {
       .Index .Index__flex .Index__caja {
         width: 180px;
         height: 120px;
-        font-size: 0.6rem; }
+        font-size: 0.6rem;
+        justify-content: space-between; }
         .Index .Index__flex .Index__caja .Index__titulo {
           font-size: 1rem;
           padding-bottom: 0px; }
         .Index .Index__flex .Index__caja .Index__SubTitulo {
           font-size: 0.8rem;
-          padding-bottom: 0px; } }
+          padding-bottom: 0px; }
+        .Index .Index__flex .Index__caja .Index__texto {
+          width: 80%; } }
