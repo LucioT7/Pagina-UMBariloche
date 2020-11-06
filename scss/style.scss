@@ -505,48 +505,26 @@ section { background-image: url(imagenes/fondo2.png);
 		}
 	}
 
-	.descarga__conteiner { 
-		display: grid;
-		grid-template-columns: 1.5fr 2fr;
-		grid-template-rows: auto;
-		grid-template-areas: "imagen caja";
-		justify-items: center;
-		align-items: center;
+	.descarga__conteiner {
 		.descarga__conteiner--regdin {
-			grid-template-columns: 1.5fr 1fr 1fr;
-			grid-template-rows: auto;
-			grid-template-areas: "imagen caja caja";
-		
+		grid-template-columns: 1.2fr 1fr 1fr;
+		grid-template-rows: auto;
+		grid-template-areas: "imagen caja caja";
 		}
 		.descarga__ImagenRegDin {
-			display: inline-block; 
-			grid-area: imagen ;
 			width: 150px;
 			height: 150px;
 		}
-		.descarga__CajaRegDin { 
-			display: inline-flex; 
-			flex-direction: row;
-			justify-content: space-around; 
-			text-align: center;
+		.descarga__CajaRegDin { border: solid;
 			width: 300px;
-			grid-area: caja ;
 		}
 		.descarga__ImagenTopicos {
-			display: inline-block;
-			grid-area: imagen ;
 			width: 150px;
 			height: 150px;
 		}
 		.descarga__CajaTopicos {
-			display: inline-flex;
-			flex-direction: column;
-			justify-content: space-around; 
-			align-items: center;
-			text-align: center;
 			width: 300px;
-			grid-area: caja ;
-			.descarga__CajaTopicos--width {
+			.descarga__CajaTopicos--width { border: solid black;
 				width: 100px;
 			}
 			.descarga__Topicos { 
@@ -558,50 +536,16 @@ section { background-image: url(imagenes/fondo2.png);
 
 	.btn-reg {
 		font-size: 1rem;
-		font-weight: bold;
-		background-color: $naranja; 
-		color: white;
-		padding: 5px 10px; 
-		border-radius: 10px;
-		border: none;
-		transition: 0.5s;
+		padding: 5px 10px;
 	}
-	.btn-reg:hover {
-		background-color: white;
-		color: $naranja;
-		border: solid $naranja 3px;
-	}
-
 	.btn-din {
 		font-size: 1rem;
-		font-weight: bold;
-		background-color: $amarillo; 
-		color: white;
-		padding: 5px 10px; 
-		border-radius: 10px;
-		border: none;
-		transition: 0.5s;
+		padding: 5px 10px;
 	}
-	.btn-din:hover {
-		background-color: white;
-		color: $amarillo;
-		border: solid $amarillo 3px;
-	}
-
 	.btn-topico { 
 		font-size: 1rem;
-		font-weight: bold;
-		background-color: $verde; 
-		color: white;
-		padding: 5px 10px; 
-		border-radius: 10px;
-		border: none;
-		transition: 0.5s; }
-	.btn-topico:hover { 
-		background-color: white;
-		color: $verde;
-		border: solid $verde 3px; }
-
+		padding: 5px 10px;
+	}
 
 
 
