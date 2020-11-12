@@ -598,37 +598,13 @@ section { background-image: url(imagenes/fondo2.png);
 
 .datos {
 	margin-bottom: 20px;
-	.datos__conteiner { 
-		display: flex; 
-		flex-wrap: wrap; 
-		justify-content: center; 
-		align-items: center; 
-		width: 100%;
-		.datos__caja { 
-			display: flex;
+	.datos__conteiner {
+		.datos__caja {
 			flex-direction: column;
-			justify-content: space-around; 
-			align-items: center;
 			width: 90%; 
 			.datos__informacion { 
 				align-items: center;
-				display: flex;
 				flex-direction: row;
-				text-align: center;
-				font-size: 1rem; 
-				line-height: 1.6;
-				.datos__informacion--telefono {
-					width: 84px;
-					height: 84px;
-				}
-				.datos__informacion--ubicacion {
-					width: 58px;
-					height: 84px;
-				}
-				.datos__informacion--correo {
-					width: 84px;
-					height: 54px;
-				}
 				div {
 					padding-bottom: 20px;
 					padding-top: 20px;
