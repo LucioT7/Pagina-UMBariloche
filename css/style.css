@@ -143,7 +143,8 @@ section {
     text-align: center;
     position: relative;
     bottom: 300px;
-    left: 120px; }
+    left: 120px;
+    letter-spacing: 3px; }
   .FranjaSN .FranjaSN__CajaLateral {
     width: 35%;
     height: 100%;
@@ -363,39 +364,58 @@ section {
   border: solid #646467; }
 
 /*CONTACTO*/
-.contacto__conteiner {
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-  .contacto__conteiner .contacto__caja {
-    display: inline-flex;
-    justify-content: space-around;
-    width: 90%;
-    align-items: center; }
-    .contacto__conteiner .contacto__caja .contacto__formulario {
-      text-align: center;
-      font-size: 1rem;
-      color: #646467; }
-      .contacto__conteiner .contacto__caja .contacto__formulario .contacto__titulo {
-        font-weight: bold;
-        font-size: 2rem;
-        color: #646467; }
-
-.datos__conteiner {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  width: 100%; }
-  .datos__conteiner .datos__caja {
+.contacto {
+  margin-bottom: 80px; }
+  .contacto .contacto__conteiner {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center; }
+    .contacto .contacto__conteiner .contacto__caja {
+      display: inline-flex;
+      justify-content: space-around;
+      width: 90%;
+      align-items: center; }
+      .contacto .contacto__conteiner .contacto__caja .contacto__mapa .contacto__MapaUbicacion--chico {
+        display: none; }
+      .contacto .contacto__conteiner .contacto__caja .contacto__formulario {
+        text-align: center;
+        font-size: 1rem;
+        color: #646467; }
+        .contacto .contacto__conteiner .contacto__caja .contacto__formulario .contacto__titulo {
+          font-weight: bold;
+          font-size: 2rem;
+          color: #646467; }
+
+.datos {
+  margin-bottom: 20px; }
+  .datos .datos__conteiner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-    width: 75%; }
-    .datos__conteiner .datos__caja .datos__informacion {
-      text-align: center;
-      font-size: 1rem;
-      line-height: 1.6; }
+    width: 100%; }
+    .datos .datos__conteiner .datos__caja {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 75%; }
+      .datos .datos__conteiner .datos__caja .datos__informacion {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-size: 1rem;
+        line-height: 1.6; }
+        .datos .datos__conteiner .datos__caja .datos__informacion .datos__informacion--telefono {
+          width: 84px;
+          height: 84px; }
+        .datos .datos__conteiner .datos__caja .datos__informacion .datos__informacion--ubicacion {
+          width: 58px;
+          height: 84px; }
+        .datos .datos__conteiner .datos__caja .datos__informacion .datos__informacion--correo {
+          width: 84px;
+          height: 54px; }
+        .datos .datos__conteiner .datos__caja .datos__informacion div {
+          padding-bottom: 30px; }
 
 footer {
   font-family: Gotham, Helvetica, Verdana, Sans Serif;
@@ -503,24 +523,24 @@ footer {
     font-size: 0.8rem; }
     .TituloRecursos p {
       width: 95%; }
-  .descarga__conteiner .descarga__conteiner--regdin {
-    grid-template-columns: 1.2fr 1fr 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: "imagen caja caja"; }
-  .descarga__conteiner .descarga__ImagenRegDin {
-    width: 120px;
-    height: 120px; }
-  .descarga__conteiner .descarga__CajaRegDin {
-    width: 200px; }
-  .descarga__conteiner .descarga__ImagenTopicos {
-    width: 120px;
-    height: 120px; }
-  .descarga__conteiner .descarga__CajaTopicos {
-    width: 300px; }
-    .descarga__conteiner .descarga__CajaTopicos .descarga__CajaTopicos--width {
-      width: 100px; }
-    .descarga__conteiner .descarga__CajaTopicos .descarga__Topicos {
-      font-size: 1rem; }
+  .descarga__conteiner {
+    grid-template-columns: 1fr;
+    grid-template-areas: "caja"; }
+    .descarga__conteiner .descarga__conteiner--regdin {
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: "caja caja"; }
+    .descarga__conteiner .descarga__ImagenRegDin {
+      display: none; }
+    .descarga__conteiner .descarga__CajaRegDin {
+      width: 400px; }
+    .descarga__conteiner .descarga__ImagenTopicos {
+      display: none; }
+    .descarga__conteiner .descarga__CajaTopicos {
+      width: 300px; }
+      .descarga__conteiner .descarga__CajaTopicos .descarga__CajaTopicos--width {
+        width: 100px; }
+      .descarga__conteiner .descarga__CajaTopicos .descarga__Topicos {
+        font-size: 1rem; }
   .btn-reg {
     font-size: 1rem;
     padding: 5px 10px; }
@@ -529,4 +549,48 @@ footer {
     padding: 5px 10px; }
   .btn-topico {
     font-size: 1rem;
-    padding: 5px 10px; } }
+    padding: 5px 10px; }
+  /*CONTACTO*/
+  .contacto {
+    margin-bottom: 30px; }
+    .contacto .contacto__conteiner .contacto__caja {
+      flex-direction: column; }
+      .contacto .contacto__conteiner .contacto__caja .contacto__mapa .contacto__MapaUbicacion {
+        display: none; }
+      .contacto .contacto__conteiner .contacto__caja .contacto__mapa .contacto__MapaUbicacion--chico {
+        visibility: visible; }
+  .datos {
+    margin-bottom: 20px; }
+    .datos .datos__conteiner {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      width: 100%; }
+      .datos .datos__conteiner .datos__caja {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 90%; }
+        .datos .datos__conteiner .datos__caja .datos__informacion {
+          align-items: center;
+          display: flex;
+          flex-direction: row;
+          text-align: center;
+          font-size: 1rem;
+          line-height: 1.6; }
+          .datos .datos__conteiner .datos__caja .datos__informacion .datos__informacion--telefono {
+            width: 84px;
+            height: 84px; }
+          .datos .datos__conteiner .datos__caja .datos__informacion .datos__informacion--ubicacion {
+            width: 58px;
+            height: 84px; }
+          .datos .datos__conteiner .datos__caja .datos__informacion .datos__informacion--correo {
+            width: 84px;
+            height: 54px; }
+          .datos .datos__conteiner .datos__caja .datos__informacion div {
+            padding-bottom: 20px;
+            padding-top: 20px;
+            padding-right: 10px;
+            padding-left: 10px; } }

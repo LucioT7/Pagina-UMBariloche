@@ -138,7 +138,8 @@ section { background-image: url(imagenes/fondo2.png);
 		text-align: center;
 		position: relative; 
 		bottom: 300px; 
-		left: 120px; }
+		left: 120px;
+		letter-spacing: 3px; }
 	.FranjaSN__CajaLateral {
 		width: 35%; 
 		height: 100%; 
@@ -378,46 +379,75 @@ section { background-image: url(imagenes/fondo2.png);
 
 /*CONTACTO*/
 
-.contacto__conteiner { display: flex;
-					justify-content: center; 
-					align-items: center; 
-	.contacto__caja { 
-		display: inline-flex; 
-		justify-content: space-around; 
-		width: 90%; 
-		align-items: center;
-		.contacto__formulario { 
-			text-align: center; 
-			font-size: 1rem; 
-			color: $gris;
-			.contacto__titulo { 
-				font-weight: bold;
-				font-size: 2rem; 
-				color: $gris;  
+.contacto {
+	margin-bottom: 80px;
+	.contacto__conteiner { 
+		display: flex;
+		justify-content: center; 
+		align-items: center; 
+		.contacto__caja { 
+			display: inline-flex; 
+			justify-content: space-around; 
+			width: 90%; 
+			align-items: center;
+			.contacto__mapa {
+				.contacto__MapaUbicacion--chico {
+					display: none;
+				}
+			}
+			.contacto__formulario { 
+				text-align: center; 
+				font-size: 1rem; 
+				color: $gris;
+				.contacto__titulo { 
+					font-weight: bold;
+					font-size: 2rem; 
+					color: $gris;  
+				}
 			}
 		}
 	}
 }
 
-.datos__conteiner { 
-	display: flex; 
-	flex-wrap: wrap; 
-	justify-content: center; 
-	align-items: center; 
-	width: 100%;
-	.datos__caja { 
-		display: flex;
-		justify-content: space-around; 
-		align-items: center;
-		width: 75%; 
-		.datos__informacion { 
-			text-align: center;
-			font-size: 1rem; 
-			line-height: 1.6;
+
+.datos {
+	margin-bottom: 20px;
+	.datos__conteiner { 
+		display: flex; 
+		flex-wrap: wrap; 
+		justify-content: center; 
+		align-items: center; 
+		width: 100%;
+		.datos__caja { 
+			display: flex;
+			justify-content: space-around; 
+			align-items: center;
+			width: 75%; 
+			.datos__informacion { 
+				display: flex;
+				flex-direction: column;
+				text-align: center;
+				font-size: 1rem; 
+				line-height: 1.6;
+				.datos__informacion--telefono {
+					width: 84px;
+					height: 84px;
+				}
+				.datos__informacion--ubicacion {
+					width: 58px;
+					height: 84px;
+				}
+				.datos__informacion--correo {
+					width: 84px;
+					height: 54px;
+				}
+				div {
+					padding-bottom: 30px;
+				}
+			}
 		}
 	}
 }
-
 
 
 @import "footer";
@@ -506,21 +536,20 @@ section { background-image: url(imagenes/fondo2.png);
 	}
 
 	.descarga__conteiner {
+		grid-template-columns: 1fr;
+		grid-template-areas: "caja";
 		.descarga__conteiner--regdin {
-		grid-template-columns: 1.2fr 1fr 1fr;
-		grid-template-rows: auto;
-		grid-template-areas: "imagen caja caja";
+		grid-template-columns: 1fr 1fr;
+		grid-template-areas: "caja caja";
 		}
-		.descarga__ImagenRegDin {
-			width: 120px;
-			height: 120px;
+		.descarga__ImagenRegDin { 
+			display: none;
 		}
 		.descarga__CajaRegDin {
-			width: 200px;
+			width: 400px;
 		}
-		.descarga__ImagenTopicos {
-			width: 120px;
-			height: 120px;
+		.descarga__ImagenTopicos { 
+			display: none;
 		}
 		.descarga__CajaTopicos {
 			width: 300px;
@@ -548,5 +577,67 @@ section { background-image: url(imagenes/fondo2.png);
 	}
 
 
+/*CONTACTO*/
+
+.contacto {
+	margin-bottom: 30px;
+	.contacto__conteiner { 
+		.contacto__caja { 
+			flex-direction: column;
+			.contacto__mapa {
+				.contacto__MapaUbicacion {
+					display: none;
+				}
+				.contacto__MapaUbicacion--chico {
+					visibility: visible;
+				}
+			}
+		}
+	}
+}
+
+.datos {
+	margin-bottom: 20px;
+	.datos__conteiner { 
+		display: flex; 
+		flex-wrap: wrap; 
+		justify-content: center; 
+		align-items: center; 
+		width: 100%;
+		.datos__caja { 
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around; 
+			align-items: center;
+			width: 90%; 
+			.datos__informacion { 
+				align-items: center;
+				display: flex;
+				flex-direction: row;
+				text-align: center;
+				font-size: 1rem; 
+				line-height: 1.6;
+				.datos__informacion--telefono {
+					width: 84px;
+					height: 84px;
+				}
+				.datos__informacion--ubicacion {
+					width: 58px;
+					height: 84px;
+				}
+				.datos__informacion--correo {
+					width: 84px;
+					height: 54px;
+				}
+				div {
+					padding-bottom: 20px;
+					padding-top: 20px;
+					padding-right: 10px;
+					padding-left: 10px;
+				}
+			}
+		}
+	}
+}
 
 }
