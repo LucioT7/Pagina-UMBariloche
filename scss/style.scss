@@ -128,7 +128,8 @@ section { background-image: url(imagenes/fondo2.png);
 	display: inline-block;
 	.FranjaSN__imagen { 	
 		width: 100%; 
-		height: 500px; }
+		height: 500px; 
+	}
 	.FranjaSN__titulo {
 		width: 500px; 
 		height: 60px;
@@ -139,7 +140,8 @@ section { background-image: url(imagenes/fondo2.png);
 		position: relative; 
 		bottom: 300px; 
 		left: 120px;
-		letter-spacing: 3px; }
+		letter-spacing: 3px; 
+	}
 	.FranjaSN__CajaLateral {
 		width: 35%; 
 		height: 100%; 
@@ -153,13 +155,23 @@ section { background-image: url(imagenes/fondo2.png);
 			color: $gris; 
 			text-align: center; 
 			letter-spacing: 3px; 
-			padding: 0px; }
+			padding: 0px; 
+			margin-top: 20px;
+		}
 		.FranjaSN__SubTitulo--color { 
-			color: $bordo;}
+			color: $bordo;
+			margin-top: 0px;
+		}
 		.FranjaSN__texto {
+			display: flex;
+			justify-content: center;
 			font-size: 1rem; 
-			line-height: 1.6; 
-			text-align: center; }
+			line-height: 1.5; 
+			text-align: center;
+			p { 
+				width: 75%;
+			}
+		}
 	}
 }
 
@@ -183,6 +195,10 @@ section { background-image: url(imagenes/fondo2.png);
 		width: 80%; 
 		.ParticipantesSN__cajas { 
 			height: 450px;
+			.ParticipantesSN__imagen {
+				width: 280px;
+				height: 350px;
+			}
 			.ParticipantesSN__texto { 
 				display: inline-block;
 				background-color: white; 
@@ -523,6 +539,113 @@ section { background-image: url(imagenes/fondo2.png);
 			}
 		}
 	}
+
+
+
+
+/*SOBRE NOSOTROS*/
+
+	.FranjaSN {
+		height: 200px; 
+		.FranjaSN__imagen { 
+			height: 200px; 
+		}
+		.FranjaSN__titulo {
+			width: 100%; 
+			height: 30px;
+			font-size: 1.2rem; 
+			bottom: 180px; 
+			left: 0px;
+			background-color: rgba(0, 0, 0, 0.5);
+		}
+		.FranjaSN__CajaLateral { 
+			width: 100%; 
+			height: 70%; 
+			float: none; 
+			bottom: 170px; 
+			.FranjaSN__SubTitulo { 
+				display: inline;
+				font-size: 1.2rem;
+				padding: 0px;
+				margin-top: 0px;
+				position: relative;
+				left: 60px;
+				top: 5px;
+			}
+			.FranjaSN__texto {
+				font-size: 0.6rem;
+				padding-top: 8px;
+				p { 
+					width: 95%;
+				}
+			}
+		}
+	}
+
+
+.TituloSN { border: solid;
+	color: $gris;
+	font-size: 1.5rem;
+	font-weight: bold;
+	text-align: center;
+	letter-spacing: 2px;
+	position: relative;
+	margin-bottom: 0px;
+}
+
+.ParticipantesSN {
+	display: flex;
+	justify-content: space-around;
+	width: 100%; 
+	.ParticipantesSN__grid { 
+		display: grid; 
+		grid-template-columns: 1fr 1fr; 
+		grid-template-rows: 1fr 1fr 1fr 1fr;
+		justify-items: center; 
+		width: 95%; 
+		.ParticipantesSN__cajas { 
+			height: 300px;
+			.ParticipantesSN__imagen {
+				width: 168px;
+				height: 210px;
+			}
+			.ParticipantesSN__texto { 
+				display: inline-block;
+				background-color: white; 
+				border: solid 0.5px;
+				width: 90%; 
+				padding-top: 8px; 
+				padding-bottom: 8px;
+				text-align: center; 
+				font-size: 0.6rem; 
+				line-height: 1.5; 
+				font-weight: lighter; 
+				color: #gris;
+				position: relative; 
+				bottom: 40px; 
+				left: 8.4px; 
+				.ParticipantesSN__titulo { 
+					font-size: 1rem; 
+					letter-spacing: 2px; 
+					font-weight: normal; 
+					color: $gris; }
+				.ParticipantesSN__titulo--CdC {
+					letter-spacing: 0.8px; }
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
