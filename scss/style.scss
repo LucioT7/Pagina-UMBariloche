@@ -6,6 +6,7 @@ $celeste: #61B4E4;
 $amarillo: #FFB819;
 
 
+
 .navbar-nav {
 	font-family: Gotham, Helvetica, Verdana, Sans Serif; 
 	width: 100%;
@@ -14,27 +15,28 @@ $amarillo: #FFB819;
 	font-size: 1.5rem;
 }
 
-#nav-link {
+#nav-pag {
 	color: $verde;
 	text-decoration-line: none;
 	transition: 0.5s;
 }
 
-#nav-link:hover {
+#nav-pag:hover {
 	color: $bordo;
 	text-decoration-line: none; 
 }
 
-#nav-active {
+#nav-pag-active {
 	color: $bordo;
 	font-weight: bold;
 	text-decoration-line: none; 
 }
 
-#nav-active:hover {
+#nav-pag-active:hover {
 	color: $bordo;
 	text-decoration-line: none; 
 }
+
 
 
 

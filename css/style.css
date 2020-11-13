@@ -5,21 +5,21 @@
   justify-content: space-around;
   font-size: 1.5rem; }
 
-#nav-link {
+#nav-pag {
   color: #73A950;
   text-decoration-line: none;
   transition: 0.5s; }
 
-#nav-link:hover {
+#nav-pag:hover {
   color: #A02140;
   text-decoration-line: none; }
 
-#nav-active {
+#nav-pag-active {
   color: #A02140;
   font-weight: bold;
   text-decoration-line: none; }
 
-#nav-active:hover {
+#nav-pag-active:hover {
   color: #A02140;
   text-decoration-line: none; }
 
