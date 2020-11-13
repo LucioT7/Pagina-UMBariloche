@@ -1,3 +1,10 @@
+header {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 20px; }
+  header .LogoWeb {
+    margin-bottom: 30px; }
+
 .navbar-nav {
   font-family: Gotham, Helvetica, Verdana, Sans Serif;
   width: 100%;
@@ -22,46 +29,6 @@
 #nav-pag-active:hover {
   color: #A02140;
   text-decoration-line: none; }
-
-header {
-  text-align: center;
-  margin-top: 50px;
-  margin-bottom: 20px; }
-  header .LogoWeb {
-    margin-bottom: 30px; }
-
-.navegador__conteiner {
-  display: flex;
-  justify-content: center; }
-  .navegador__conteiner .navegador__barra {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    font-size: 1.4rem;
-    font-family: Gotham, Helvetica, Verdana, Sans Serif;
-    width: 90%; }
-    .navegador__conteiner .navegador__barra .navegador__pagina {
-      color: #73A950;
-      transition: 0.5s;
-      text-decoration-line: none; }
-    .navegador__conteiner .navegador__barra .navegador__pagina:hover {
-      color: #A02140;
-      text-decoration-line: none; }
-    .navegador__conteiner .navegador__barra .navegador__select {
-      font-weight: bold;
-      color: #A02140;
-      text-decoration-line: none; }
-    .navegador__conteiner .navegador__barra .navegador__select:hover {
-      font-weight: bold;
-      color: #A02140;
-      text-decoration-line: none; }
-    .navegador__conteiner .navegador__barra a {
-      text-decoration-line: none; }
-
-@media screen and (max-width: 768px) {
-  .navegador__conteiner .navegador__barra {
-    font-size: 0.8rem;
-    width: 100%; } }
 
 section {
   background-image: url(imagenes/fondo2.png);

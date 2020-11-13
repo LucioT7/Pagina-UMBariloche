@@ -8,36 +8,50 @@
 	<!-- <link rel="stylesheet" type="text/css" href="css/bootstrap.css"> -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/style2.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<title>Participantes - UMBariloche</title>
 </head>
 <body>
 
-	<header><br><br>
+	<header>
+		
+		<img src="imagenes/logo-web.png" class="LogoWeb">
 
-		<a href="index.html"><img src="imagenes/logo-web.png" class="LogoWeb">
-		<nav><br><br>
-			<div class="Navegador">
-				<div class="NavegadorBis">
-					<div><a href="index.html" class="PaginasNav">INICIO</a></div>
-					<div><a href="SobreNosotros.html" class="PaginasNav" >SOBRE NOSOTROS</a></div>
-					<div><a href="Participantes.html" class="select" >PARTICIPANTES</a></div>
-					<div><a href="Recursos.html" class="PaginasNav" >RECURSOS</a></div>
-					<div><a href="Contacto.html" class="PaginasNav" >CONTACTO</a></div>
-				</div>
+		<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #FFFFFF">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav">
+					<li class="nav-item active">
+						<a class="nav-link" href="index.html" id="nav-pag">INICIO <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="SobreNosotros.html" id="nav-pag">SOBRE NOSOTROS</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="Participantes.html" id="nav-pag-active">PARTICIPANTES</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="Recursos.html" id="nav-pag">RECURSOS</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="Contacto.html" id="nav-pag">CONTACTO</a>
+					</li>
+				</ul>
 			</div>
 		</nav>
 
-	</header><br><br>
+	</header>
 
 	<section>
 
-		<article>
-
-			<div class="CajaFranjas">
-				<img src="imagenes/FondoParticipantes2.jpg" class="ImagenFranjas">
-				<div class="CajaFranjas2"><div class="TituloFranjas">PARTICIPANTES<div></div>
+		<article class="franja">
+			<div class="franja__conteiner">
+				<img src="imagenes/FondoParticipantes2.jpg" class="franja__imagen">
+				<div class="franja__caja"><div class="franja__titulo">PARTICIPANTES</div></div>
 			</div>
-		</article><br><br><br>
+		</article>
 		<article>
 			<div class="Navegacion1P">
 			<div class="Navegacion2P">
@@ -253,17 +267,18 @@
 		</article><br><br><br>
 	</section>
 
-	<footer><br><br>
-		<div class="CajaFooter1">
-			<div class="CajaFooter">
-				<div class="TituloPie" id="Redes">Redes Sociales</div>
-				<div class="TituloPie" id="Contacto">Contacto</div>
-				<div class="InfoPie" id="InfoRedes">
-					<img src="imagenes/instagram.png" width="30" height="30" class="LogoRedes"><a href="https://www.instagram.com/umbariloche/" class="LinkRedes">@umbariloche</a><br>
-					<img src="imagenes/facebook.png" width="30" height="30" class="LogoRedes"><a href="https://www.facebook.com/MNUBARILOCHE" class="LinkRedes">Uniendo Metas Bariloche</a><br>
-					<img src="imagenes/youtube.png" width="30" height="30" class="LogoRedes"><a href="https://www.youtube.com/channel/UCif03ypeJR69vSvtCdCQSpA" class="LinkRedes">Uniendo Metas Bariloche</a>
+	<footer class="footer"><br><br>
+
+		<div class="footer__conteiner">
+			<div class="footer__caja">
+				<div class="footer__titulos" id="Redes">Redes Sociales</div>
+				<div class="footer__informacion" id="InfoRedes">
+					<img src="imagenes/instagram.png" width="30" height="30" class="footer__logos"><a href="https://www.instagram.com/umbariloche/" class="footer__links">@umbariloche</a><br>
+					<img src="imagenes/facebook.png" width="30" height="30" class="footer__logos"><a href="https://www.facebook.com/MNUBARILOCHE" class="footer__links">Uniendo Metas Bariloche</a><br>
+					<img src="imagenes/youtube.png" width="30" height="30" class="footer__logos"><a href="https://www.youtube.com/channel/UCif03ypeJR69vSvtCdCQSpA" class="footer__links">Uniendo Metas Bariloche</a>
 				</div>
-				<div class="InfoPie" id="InfoContacto">
+				<div class="footer__titulos" id="Contacto">Contacto</div>
+				<div class="footer__informacion" id="InfoContacto">
 					umbariloche@conciencia.org<br>
 					+54 294 442-5087<br>
 					Juramento 186, San Carlos de Bariloche

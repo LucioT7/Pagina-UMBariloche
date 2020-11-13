@@ -6,43 +6,6 @@ $celeste: #61B4E4;
 $amarillo: #FFB819;
 
 
-
-.navbar-nav {
-	font-family: Gotham, Helvetica, Verdana, Sans Serif; 
-	width: 100%;
-	display: flex;
-	justify-content: space-around;
-	font-size: 1.5rem;
-}
-
-#nav-pag {
-	color: $verde;
-	text-decoration-line: none;
-	transition: 0.5s;
-}
-
-#nav-pag:hover {
-	color: $bordo;
-	text-decoration-line: none; 
-}
-
-#nav-pag-active {
-	color: $bordo;
-	font-weight: bold;
-	text-decoration-line: none; 
-}
-
-#nav-pag-active:hover {
-	color: $bordo;
-	text-decoration-line: none; 
-}
-
-
-
-
-
-
-
 @import "header";
 
 
