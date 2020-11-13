@@ -5,8 +5,41 @@ $naranja: #E15829;
 $celeste: #61B4E4;
 $amarillo: #FFB819;
 
-.hola {font-weight: bold;
-		font-size: 3rem;}
+
+.navbar-nav {
+	font-family: Gotham, Helvetica, Verdana, Sans Serif; 
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	font-size: 1.5rem;
+}
+
+#nav-link {
+	color: $verde;
+	text-decoration-line: none;
+	transition: 0.5s;
+}
+
+#nav-link:hover {
+	color: $bordo;
+	text-decoration-line: none; 
+}
+
+#nav-active {
+	color: $bordo;
+	font-weight: bold;
+	text-decoration-line: none; 
+}
+
+#nav-active:hover {
+	color: $bordo;
+	text-decoration-line: none; 
+}
+
+
+
+
+
 
 @import "header";
 
@@ -583,7 +616,7 @@ section { background-image: url(imagenes/fondo2.png);
 	}
 
 
-.TituloSN { border: solid;
+.TituloSN { 
 	color: $gris;
 	font-size: 1.5rem;
 	font-weight: bold;
@@ -740,3 +773,4 @@ section { background-image: url(imagenes/fondo2.png);
 }
 
 }
+

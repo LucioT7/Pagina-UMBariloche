@@ -1,9 +1,34 @@
-.hola {
+.navbar-nav {
+  font-family: Gotham, Helvetica, Verdana, Sans Serif;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.5rem; }
+
+#nav-link {
+  color: #73A950;
+  text-decoration-line: none;
+  transition: 0.5s; }
+
+#nav-link:hover {
+  color: #A02140;
+  text-decoration-line: none; }
+
+#nav-active {
+  color: #A02140;
   font-weight: bold;
-  font-size: 3rem; }
+  text-decoration-line: none; }
+
+#nav-active:hover {
+  color: #A02140;
+  text-decoration-line: none; }
 
 header {
-  text-align: center; }
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 20px; }
+  header .LogoWeb {
+    margin-bottom: 30px; }
 
 .navegador__conteiner {
   display: flex;
@@ -558,7 +583,6 @@ footer {
         .FranjaSN .FranjaSN__CajaLateral .FranjaSN__texto p {
           width: 95%; }
   .TituloSN {
-    border: solid;
     color: #646467;
     font-size: 1.5rem;
     font-weight: bold;
